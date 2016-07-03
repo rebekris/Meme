@@ -1,0 +1,45 @@
+body { background-color:#eeeeee; 
+	font-family: sans-serif;
+	text-align: center;
+	}
+	
+#canvas {width: 796px;
+		height: 484px;
+        border: 2px orange solid;
+		display: block;
+		margin: 1em auto;
+           }
+		   
+#propiedades {margin-left:40px;
+        margin-top:40px;
+       }
+	   
+
+#top-line, #bottom-line {
+		padding: .5em;
+		border: 1px solid #999;
+		font: inherit;
+	}
+#contenedor {
+        display: flex;
+      }
+
+
+
+/*
+
+img {
+  left: -10000px;
+  top: -10000px;
+  position: absolute;
+}
+*/
+input {
+  display: block;
+}
+
+/***==================================***/
+.gallery ul{display: inline-block}
+.gallery ul li{list-style: none; list-style-type: none; float: left;}
+.gallery ul li img{width: 250px; height: 150px}
+#controls{display:none;}

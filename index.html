@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de memes</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+</head>
+<body>
+  <div class="gallery">
+      <ul class="elements">
+          <li class="element"><a href="#" onclick="loadImg();"><img src="img/Batman-Slapping-Robin.jpg" id="nn"></a></li>
+          <li class="element"><a href="#" onclick="loadImg1();"><img src="img/example.jpg" id="nn1"></a></li>
+          <li class="element"><a href="#" onclick="loadImg2();"><img src="img/One-Does-Not-Simply.jpg" id="nn2"></a></li>
+          <li class="element"><a href="#" onclick="loadImg3();"><img src="img/Ancient-Aliens.jpg" id="nn3"></a></li>
+      </ul>
+  </div>
+  <script>
+      
+    </script>
+  <div class="tablero">
+      <canvas id="canvas">
+          
+      </canvas>
+  </div>
+  
+  <script>
+       var mycanvas=document.getElementById("canvas");
+        var cntx=mycanvas.getContext('2d');
+      var crontrol =document.getElementById('controls')
+      
+      
+      function loadImg(){
+          var img= new Image();
+          var x = document.getElementById('nn');
+          img.src= x.getAttribute('src');
+          cntx.beginPath();
+          img.onload=function(){
+              cntx.drawImage(img,0,0,350,180);
+               document.getElementById("controls").style.display = "block";
+          }
+      }   
+      function loadImg1(){
+          var img= new Image();
+          var x = document.getElementById('nn1');
+          img.src= x.getAttribute('src');
+          cntx.beginPath();
+          img.onload=function(){
+              cntx.drawImage(img,0,0,350,180);
+          }
+      }   
+      function loadImg2(){
+          var img= new Image();
+          var x = document.getElementById('nn2');
+          img.src= x.getAttribute('src');
+          cntx.beginPath();
+          img.onload=function(){
+              cntx.drawImage(img,0,0,350,180);
+          }
+      }   
+      function loadImg3(){
+          var img= new Image();
+          var x = document.getElementById('nn3');
+          img.src= x.getAttribute('src');
+          cntx.beginPath();
+          img.onload=function(){
+              cntx.drawImage(img,0,0,350,180);
+          }
+      }      
+    </script>
+    
+    <div id="controls">
+        <input id="top-line" placeholder="top line">
+	    <input id="bottom-line" placeholder="bottom line">
+        
+    </div>
+
+</body>
+</html>
